@@ -1,0 +1,14 @@
+<ul>
+  <li>Title: {{this.model.title}}</li>
+  <li>Director: {{this.model.director}}</li>
+  <li>Release Year: {{this.model.release}}</li>
+  <li>Duration: {{this.model.length}} minutes</li>
+  {{#if this.isActive}}
+  <li>Genre: {{this.model.genre}} </li>
+  <li>Actors: {{this.model.actors}}</li>
+  <li>Plot: {{this.model.plot}}</li>
+  {{/if}}
+</ul>
+  <button onclick={{action 'toggleShowMore'}}>{{#if this.isActive}}Show Less{{else}}Show More{{/if}}</button>
+
+{{outlet}}
