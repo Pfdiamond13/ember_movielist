@@ -8,7 +8,11 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('movies', {path:'/'}, function(){
-    this.route('movie', {path:':movie_id'});
+    this.route('movie', {path:':movie_id'}, function() {
+      this.route('details', function() {
+        this.route('edit');
+      });
+    });
   });
 });
 

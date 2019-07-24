@@ -1,0 +1,9 @@
+<ul>
+  <li>Title: {{this.model.title}}</li>
+  <li>Director: {{this.model.director}}</li>
+  <li>Release Year: {{this.model.release}}</li>
+  <li>Duration: {{this.model.length}} minutes</li>
+</ul>
+  {{#link-to 'movies.movie.details'}}<div>More Details</div>{{/link-to}}
+
+{{outlet}}

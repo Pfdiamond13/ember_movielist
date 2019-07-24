@@ -1,5 +1,6 @@
 {{#each this.model as |movie|}}
 <ul>
-  {{#link-to 'movies.movie' movie.id }}<li>{{movie.title}}</li>{{/link-to}}
+  {{#link-to 'movies.movie' movie.id }}<li>Title: {{movie.title}} Rating:{{movie.rating}} stars</li>{{/link-to}}
 </ul>
 {{/each}}
+{{outlet}}

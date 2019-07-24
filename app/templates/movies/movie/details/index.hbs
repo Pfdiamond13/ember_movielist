@@ -1,0 +1,12 @@
+<ul>
+  <li>Title: {{this.model.title}}</li>
+  <li>Director: {{this.model.director}}</li>
+  <li>Release Year: {{this.model.release}}</li>
+  <li>Duration: {{this.model.length}} minutes</li>
+  <li>Genre: {{this.model.genre}} </li>
+  <li>Actors: {{this.model.actors}}</li>
+  <li>Plot: {{this.model.plot}}</li>
+  <li>Rating: {{this.model.rating}}</li>
+</ul>
+{{#link-to 'movies.movie.details.edit'}}<div>Edit Details</div>{{/link-to}}
+{{#link-to 'movies.movie'}}<div>Back to Movie</div>{{/link-to}}
