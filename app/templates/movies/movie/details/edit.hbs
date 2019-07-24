@@ -1,0 +1,12 @@
+{{this.movie}}
+<ul>
+  <li>Title: <input id='editTitle' value={{this.model.title}}></li>
+  <li>Director: <input id='editDirector' value={{this.model.director}}></li>
+  <li>Release Year: <input id='editRelease' value={{this.model.release}}></li>
+  <li>Duration: <input id='editDuration' value={{this.model.length}}>minutes</li>
+  <li>Genre: <input id='editGenre' value={{this.model.genre}}> </li>
+  <li>Actors: <input id='editActors' value={{this.model.actors}}></li>
+  <li>Plot: <textarea id='editPlot' value={{this.model.plot}}></textarea></li>
+  <li>Rating: <input id='editRating' value={{this.model.rating}}>Enter a value between 1-5</li>
+</ul>
+{{#link-to 'movies.movie.details'}}<button onclick={{action "updateDetails" }}>Save Changes</button>{{/link-to}}{{#link-to 'movies.movie.details'}}<button>Cancel</button>{{/link-to}}

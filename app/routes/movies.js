@@ -7,7 +7,8 @@ const movies = [{
     release: 1995,
     genre: 'Thriller',
     actors: ['Steve','Mike'],
-    plot: 'This is the plot of the movie'
+    plot: 'This is the plot of the movie',
+    rating: 3
   },
   {
     id: 'singles', 
@@ -17,7 +18,8 @@ const movies = [{
     release: 2244,
     genre: 'Thriller',
     actors: ['Steve','Mike'],
-    plot: 'This is the plot of the movie'
+    plot: 'This is the plot of the movie',
+    rating: 4
   }
   
 ]
