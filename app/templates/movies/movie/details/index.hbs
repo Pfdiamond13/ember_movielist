@@ -1,12 +1,16 @@
-<ul>
-  <li>Title: {{this.model.title}}</li>
-  <li>Director: {{this.model.director}}</li>
-  <li>Release Year: {{this.model.release}}</li>
-  <li>Duration: {{this.model.length}} minutes</li>
-  <li>Genre: {{this.model.genre}} </li>
-  <li>Actors: {{this.model.actors}}</li>
-  <li>Plot: {{this.model.plot}}</li>
-  <li>Rating: {{this.model.rating}}</li>
+<h1 class="f4 bold center mw5">{{model.title}}</h1>
+<ul class="list pl0 ml0 center mw5 ba b--light-silver br3">
+  <li class="ph3 pv2 bb b--light-silver">Director: {{this.model.director}}</li>
+  <li class="ph3 pv2 bb b--light-silver">Release Year: {{this.model.release}}</li>
+  <li class="ph3 pv2 bb b--light-silver">Duration: {{this.model.length}} minutes</li>
+  <li class="ph3 pv2 bb b--light-silver">Genre: {{this.model.genre}} </li>
+  <li class="ph3 pv2 bb b--light-silver">Actors: {{this.model.actors}}</li>
+  <li class="ph3 pv2 bb b--light-silver">Plot: {{this.model.plot}}</li>
+  <li class="ph3 pv2 bb b--light-silver">Rating: {{this.model.rating}}</li>
 </ul>
-{{#link-to 'movies.movie.details.edit'}}<div>Edit Details</div>{{/link-to}}
-{{#link-to 'movies.movie'}}<div>Back to Movie</div>{{/link-to}}
+<div class="flex flex-column items-center">
+{{#link-to 'movies.movie.details.edit'}}<div class="f6 link dim br1 ph3 pv2 mb2 dib white bg-red fr">Edit Details
+</div>{{/link-to}}
+{{#link-to 'movies.movie'}}<div class="f6 link dim br1 ph3 pv2 mb2 dib white bg-black fr">Back to Movie</div>
+{{/link-to}}
+</div>

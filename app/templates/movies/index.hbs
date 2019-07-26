@@ -1,6 +1,12 @@
-{{#each this.model as |movie|}}
-<ul>
-  {{#link-to 'movies.movie' movie.id }}<li>Title: {{movie.title}} Rating:{{movie.rating}} stars</li>{{/link-to}}
-</ul>
-{{/each}}
+<div class="pa7 pa5-ns flex flex-column items-center">
+  {{#each this.model as |movie|}}
+  <ul class="list pl0 measure center">
+    {{#link-to 'movies.movie' movie.id }}<li
+      class="f4 fw7 dib pa2 no-underline bg-animate bg-white hover-bg-light-blue black">
+      <div>Title: {{movie.title}}</div>
+      <div>Rating: {{movie.rating}} stars</div>
+    </li>{{/link-to}}
+  </ul>
+  {{/each}}
+</div>
 {{outlet}}
