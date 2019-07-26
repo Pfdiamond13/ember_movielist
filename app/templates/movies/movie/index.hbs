@@ -1,9 +1,11 @@
-<ul>
-  <li>Title: {{this.model.title}}</li>
-  <li>Director: {{this.model.director}}</li>
-  <li>Release Year: {{this.model.release}}</li>
-  <li>Duration: {{this.model.length}} minutes</li>
+<h1 class="f4 bold center mw5">{{model.title}}</h1>
+<ul class="list pl0 ml0 center mw5 ba b--light-silver br3">
+  <li class="ph3 pv2 bb b--light-silver">Director: {{model.director}}</li>
+  <li class="ph3 pv2 bb b--light-silver">Release Year: {{model.release}}</li>
+  <li class="ph3 pv2 bb b--light-silver">Duration: {{model.length}} minutes</li>
 </ul>
-  {{#link-to 'movies.movie.details'}}<div>More Details</div>{{/link-to}}
+  <span class="flex flex-column items-center">
+  {{#link-to 'movies.movie.details'}}<div class="f6 link dim br1 ph3 pv2 mb2 dib white bg-black">More Details</div>{{/link-to}}
+  </span>
 
 {{outlet}}
